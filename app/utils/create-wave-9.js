@@ -128,29 +128,31 @@ export default function createWave9() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `This time each group contains a super tower! Super towers take a
-             while to reload but damage every enemy in their attack range. Use
-             the properties you've learned to score 80 or higher!
-
-**justify-content**
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them
-
-**align-items**
-* \`flex-start\`: align items across the start of a container's cross axis
-* \`flex-end\`: align items across the end of the cross axis
-* \`center\`: align items across the center of the cross axis
+      main: `Dessa vez cada grupo tem uma super torre! Super torres demoram pra recarregar,
+             mas causam dano a todos os inimigos na sua área de ataque. Use as propriedades
+             que você aprendeu para pontuar 80 ou mais!
 
 **flex-direction**
-* \`row\`: lay out the main axis from left to right
-* \`row-reverse\`: lay out the main axis from right to left
-* \`column\`: lay out the main axis from top to bottom
-* \`column-reverse\`: lay out the main axis from bottom to top`,
+* \`row\`: dispõe o eixo principal da esquerda pra direita
+* \`row-reverse\`: dispõe o eixo principal da direita pra esquerda
+* \`column\`: dispõe o eixo principal de cima pra baixo
+* \`column-reverse\`: dispõe o eixo principal de baixo pra cima
+
+**justify-content**
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais
+
+**align-items**
+* \`flex-start\`: alinha itens ao começo do eixo secundário do container
+* \`flex-end\`: alinha itens ao final do eixo secundário do container
+* \`center\`: alinha itens ao centro do eixo secundário do container`,
       tldr: `Use <nobr class="text__code">justify-content ▾</nobr>, <nobr
              class="text__code">align-items ▾</nobr>, and <nobr
              class="text__code">flex-direction ▾</nobr> to move your towers into

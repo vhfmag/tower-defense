@@ -121,32 +121,32 @@ export default function createWave11() {
   const wave = Wave.create({
     towerStylesHidden: false,
     instructions: {
-      main: `To vertically position individual towers, use \`align-self\`, which
-             accepts the same values as \`align-items\`.
+      main: `Para posicionar verticalmente uma torre específica, use \`align-self\`, que
+             aceita os mesmos valores que \`align-items\`.
 
-Use \`justify-content\` and \`align-self\` to move your towers
-into position.
+Use \`justify-content\` e \`align-self\` para posicionar suas torres.
 
 **justify-content**
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais
 
 **align-self**
-* \`flex-start\`: align item at the start of a container's cross axis
-* \`flex-end\`: align item at the end of the cross axis
-* \`center\`: align item at the center of the cross axis
+* \`flex-start\`: alinha item ao começo do eixo secundário do container
+* \`flex-end\`: alinha item ao final do eixo secundário do container
+* \`center\`: alinha item ao centro do eixo secundário do container
 
-<u>Reminder</u>: \`align-self\`, like \`align-items\`, also accepts the values
-<i>baseline</i> and <i>stretch</i>, but these values cannot be used in Flexbox
-Defense.`,
-      tldr: `Use <nobr class="text__code">justify-content ▾</nobr> and <nobr
-             class="text__code">align-self ▾</nobr> to move your towers into
-             position.`
+<u>Lembrete</u>: \`align-self\`, assim como \`align-items\`, também aceita os
+valores <i>baseline</i> e <i>stretch</i>, mas esses valores não podem ser usados
+no Flexbox Defense.`,
+      tldr: `Use <nobr class="text__code">justify-content ▾</nobr> e <nobr
+             class="text__code">align-self ▾</nobr> para posicionar suas torres.`
     },
     minimumScore: 80
   });

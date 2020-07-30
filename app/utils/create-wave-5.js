@@ -127,25 +127,26 @@ export default function createWave5() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `This time things are a bit trickier. Try combining
-            \`justify-content\` and \`align-items\` to score 80 or higher!
+      main: `Dessa vez as coisas estão mais complicadas. Tente combinar
+            \`justify-content\` e \`align-items\` para pontuar 80 ou mais!
 
 **justify-content**
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais
 
 **align-items**
-* \`flex-start\`: align items across the start of a container's cross axis
-* \`flex-end\`: align items across the end of the cross axis
-* \`center\`: align items across the center of the cross axis`,
-      tldr: `Use <nobr class="text__code">justify-content ▾</nobr> and <nobr
-             class="text__code">align-items ▾</nobr> to move your towers into
-             position.`
+* \`flex-start\`: alinha itens ao começo do eixo secundário do container
+* \`flex-end\`: alinha itens ao final do eixo secundário do container
+* \`center\`: alinha itens ao centro do eixo secundário do container`,
+      tldr: `Use <nobr class="text__code">justify-content ▾</nobr> e <nobr
+             class="text__code">align-items ▾</nobr> para mover suas torres.`
     },
     minimumScore: 80
   });

@@ -124,19 +124,21 @@ export default function createWave2() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `Now you have more tower groups at your disposal! Use
-            \`justify-content\` to move the towers into position.
-            \`justify-content\` accepts the following values:
+      main: `Agora você tem mais grupos de torre à sua disposição! Use
+            \`justify-content\` para mover as torres para a posição correta.
+            \`justify-content\` aceita os seguintes valores:
 
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them`,
-      tldr: `Use <nobr class="text__code">justify-content ▾</nobr>
-             to move your towers into position.`
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais`,
+      tldr: `Use a propriedade <nobr class="text__code">justify-content ▾</nobr>
+             para mover suas torres para a posição correta.`
     },
     minimumScore: 80
   });

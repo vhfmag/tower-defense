@@ -127,34 +127,35 @@ export default function createWave12() {
   const wave = Wave.create({
     towerStylesHidden: false,
     instructions: {
-      main: `This last one's pretty tough! Use the properties you've learned to
-             score 80 or higher!
+      main: `Essa última é bem difícil! Use as propriedades que você aprendeu pra pontuar 80 ou mais!
 
 **justify-content**
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais
 
 **align-items** and **align-self**
-* \`flex-start\`: align item(s) across the start of a container's cross axis
-* \`flex-end\`: align item(s) across the end of the cross axis
-* \`center\`: align item(s) across the center of the cross axis
+* \`flex-start\`: alinha item(s) ao começo do eixo secundário do container
+* \`flex-end\`: alinha item(s) ao final do eixo secundário do container
+* \`center\`: alinha item(s) ao centro do eixo secundário do container
 
 **flex-direction**
-* \`row\`: lay out the main axis from left to right
-* \`row-reverse\`: lay out the main axis from right to left
-* \`column\`: lay out the main axis from top to bottom
-* \`column-reverse\`: lay out the main axis from bottom to top
+* \`row\`: dispõe o eixo principal da esquerda pra direita
+* \`row-reverse\`: dispõe o eixo principal da direita pra esquerda
+* \`column\`: dispõe o eixo principal de cima pra baixo
+* \`column-reverse\`: dispõe o eixo principal de baixo pra cima
 
 **order**
-* \`#\`: position an item relative to the other items in the container`,
-      tldr: `Use the properties you've learned to move your towers into
-             position: <nobr class="text__code">justify-content ▾</nobr>, <nobr
-             class="text__code">align-items ▾</nobr>, <nobr
+* \`número\`: posiciona um item com relação a outros itens no container`,
+      tldr: `Use as propriedades que aprendeu para posicionar suas torres:
+             <nobr class="text__code">justify-content ▾</nobr>, <nobr
+             eita class="text__code">align-items ▾</nobr>, <nobr
              class="text__code">flex-direction ▾</nobr>, <nobr
              class="text__code">order ▾</nobr>, <nobr
              class="text__code">align-self ▾</nobr>.`

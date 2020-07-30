@@ -119,21 +119,21 @@ export default function createWave4() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `Now some of the groups have vertical space, which is the perfect
-             opportunity to use the \`align-items\` property. \`align-items\`
-             positions a container's items across its **cross axis** and accepts
-             the following values:
+      main: `Agora alguns dos grupos tem espaço vertical, o que é uma oportunidade
+             perfeita para usarmos a propriedade \`align-items\`. \`align-items\`
+             posiciona os itens de um container ao longo de seu **eixo secundário**
+             e aceita os seguintes valores:
 
-* \`flex-start\`: align items across the start of a container's cross axis
-* \`flex-end\`: align items across the end of the cross axis
-* \`center\`: align items across the center of the cross axis
+* \`flex-start\`: alinha itens ao começo do eixo secundário do container
+* \`flex-end\`: alinha itens ao final do eixo secundário do container
+* \`center\`: alinha itens ao centro do eixo secundário do container
 
-<u>Note</u>: \`align-items\` also accepts the values <i>baseline</i> (align
-items such that their baselines line up) and <i>stretch</i> (stretch items such
-that they span the entire cross axis), but these values cannot be used in
-Flexbox Defense.`,
-      tldr: `Use <nobr class="text__code">align-items ▾</nobr> to move your
-             towers into effective positions.`
+<b>Observação</b>: \`align-items\` também aceita os valores \`baseline\` (alinha os
+itens de forma que suas linhas de base se alinhem) e \`stretch\` (estique os itens
+de forma que eles ocupem todo o eixo secundário), mas esses valores não podem ser usados
+no Flexbox Defense.`,
+      tldr: `Use a propriedade <nobr class="text__code">align-items ▾</nobr> para mover
+             suas torres para a posição correta.`
     },
     minimumScore: 80
   });

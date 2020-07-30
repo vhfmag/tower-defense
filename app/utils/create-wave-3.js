@@ -121,20 +121,21 @@ export default function createWave3() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `A tower flashes red when it is positioned on the path; you must
-            reposition it before you can start the wave. Use \`justify-content\`
-            to get your towers into better positions. \`justify-content\`
-            accepts the following values:
+      main: `Uma torre pisca vermelha quando está posicionada no caminho; você deve
+            reposicioná-la antes de começar a onda. Use \`justify-content\` para
+            posicionar melhor suas torres. \`justify-content\` aceita os seguintes valores:
 
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them`,
-      tldr: `Use <nobr class="text__code">justify-content ▾</nobr>
-             to move your towers into position.`
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais`,
+      tldr: `Use a propriedade <nobr class="text__code">justify-content ▾</nobr>
+             para mover suas torres para a posição correta.`
     },
     minimumScore: 80
   });

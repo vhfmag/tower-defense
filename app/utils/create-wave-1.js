@@ -117,33 +117,35 @@ export default function createWave1() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `Your job is to stop the incoming enemies from getting past your
-             defenses. Unlike other tower defense games, you must position your
-             towers using CSS!
+      main: `Sua missão é impedir inimigos de passarem de suas defesas. Diferente
+             de outros jogos de <i lang="en">tower defense</i>, você deve posicionar
+             suas torres usando CSS!
 
-We'll start with container properties. A flexbox container has a main axis and a
-cross axis.
+Você vai começar com propriedades de container. Um container flex tem um eixo
+principal (<i lang="en">main axis</i>) e um eixo secundário (<i lang="en">cross axis</i>).
 
 <img src="images/flexbox-row.png" class="instructions__diagram" alt="flexbox diagram">
 
-Use the \`justify-content\` property on the tower group container to move
-your towers into effective positions. \`justify-content\` positions a container's
-items along the **main axis** and accepts the following values:
+Use a propriedade \`justify-content\` no container tower-group-1 para mover suas
+torres para posições efetivas. \`justify-content\` posiciona os itens de um container
+ao longo de seu eixo principal e aceita os seguintes valores:
 
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais
 
-Try \`justify-content: center;\` for example, to move the container's towers to
-the center of the main axis.`,
-      tldr: `Use the <nobr class="text__code">justify-content ▾</nobr> property to
-             move these two towers into position. Click the <i
-             class="fa fa-question-circle"></i> button in the stylesheet for a
-             reminder on how the property works.`
+Tente \`justify-content: center\`, por exemplo, para mover as torres do container
+para o centro do eixo principal.`,
+      tldr: `Use a propriedade <nobr class="text__code">justify-content ▾</nobr>
+             para mover essas duas torres para a posição correta. Clique no botão <i
+             class="fa fa-question-circle"></i> na folha de estilo (CSS) para ver
+             novamente como a propriedade funciona.`
     },
     minimumScore: 80
   });

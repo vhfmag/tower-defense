@@ -63,20 +63,20 @@
             checked=towerInputsHidden
             name="towerInputsHidden"
             type="checkbox"}}
-    <span class="hide-inputs__text" {{action "toggleHideInputs"}}>hide tower inputs</span>
+    <span class="hide-inputs__text" {{action "toggleHideInputs"}}>esconder classes das torres</span>
   </div>
 
   {{#if attrs.waveStarted}}
     {{#if attrs.cancellingWave}}
-      <button class="stylesheet__cancel-wave-button">Cancel Wave</button>
+      <button class="stylesheet__cancel-wave-button">Cancelar Onda</button>
     {{else}}
-      <button class="stylesheet__cancel-wave-button stylesheet__cancel-wave-button--active" {{action "cancelWave"}}>Cancel Wave</button>
+      <button class="stylesheet__cancel-wave-button stylesheet__cancel-wave-button--active" {{action "cancelWave"}}>Cancelar Onda</button>
     {{/if}}
   {{else}}
     {{#if attrs.towersColliding}}
-      <button class="stylesheet__start-wave-button">Start Wave</button>
+      <button class="stylesheet__start-wave-button">Iniciar Onda</button>
     {{else}}
-      <button class="stylesheet__start-wave-button stylesheet__start-wave-button--active" {{action "startWave"}}>Start Wave</button>
+      <button class="stylesheet__start-wave-button stylesheet__start-wave-button--active" {{action "startWave"}}>Iniciar Onda</button>
     {{/if}}
   {{/if}}
 </div>

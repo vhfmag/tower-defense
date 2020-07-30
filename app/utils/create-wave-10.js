@@ -126,31 +126,33 @@ export default function createWave10() {
   const wave = Wave.create({
     towerStylesHidden: false,
     instructions: {
-      main: `The super towers are in bad positions again, but this time you'll
-             need to apply styles to the towers themselves.
+      main: `As super torres estão mal posicionadas de novo, mas dessa vez você
+             vai precisar estilizar as torres em si ao invés dos grupos.
 
-The \`order\` property defines the order in which an item appears in the flex
-container and accepts both positive and negative integer values. All flex items
-begin with a default order of 0, so an item with an order greater than 0 will
-be repositioned relative to items still set to their default orders.
+A propriedade \`order\` defina a orgem em que itens aparecem no container flex
+e aceita números inteiros positivos ou negativos. Todos os itens flex começam
+com uma ordem padrão de 0, então um item com uma ordem maior do que 0 vai
+ser reposicionado para depois de itens que tenham o valor padrão.
 
-Use \`justify-content\` and \`order\` to move your towers into position.
+Use \`justify-content\` e \`order\` para posicionar suas torres.
 
 **justify-content**
-* \`flex-start\`: group items at the start of a container's main axis
-* \`flex-end\`: group items at the end of the main axis
-* \`center\`: group items in the center of the main axis
-* \`space-between\`: evenly distribute items along the main axis such that the
-first item aligns at the start and the final item aligns at the end
-* \`space-around\`: evenly distribute items along the main axis such that all
-items have equal space around them
+* \`flex-start\`: agrupa itens no começo do eixo principal do container
+* \`flex-end\`: agrupa itens no final do eixo principal do container
+* \`center\`: agrupa items no centro do eixo principal do container
+* \`space-between\`: distribui os itens igualmente ao longo do eixo principal
+de forma que o primeiro item alinha com o começo e o último, com o fim
+* \`space-around\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os itens tenham o mesmo espaço ao seu redor
+* \`space-evenly\`: distribui os itens igualmente ao longo do eixo principal
+de forma que todos os espaços sejam iguais
 
 **order**
-* \`#\`: position an item relative to the other items in the container`,
-    tldr: `Move your towers into position by combining the container property
-           <nobr class="text__code">justify-content ▾</nobr> with the item
-           property <nobr class="text__code">order ▾</nobr>. Remember that all
-           items have a default order of 0.`
+* \`número\`: posiciona um item com relação a outros itens no container`,
+    tldr: `Posicione suas torres combinando a propriedade de container
+           <nobr class="text__code">justify-content ▾</nobr> com a propriedade
+           de item <nobr class="text__code">order ▾</nobr>. Lembre-se que todos
+           os itens tem uma ordem padrão de 0.`
     },
     minimumScore: 80
   });

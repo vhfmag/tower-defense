@@ -120,27 +120,24 @@ export default function createWave7() {
   const wave = Wave.create({
     towerStylesHidden: true,
     instructions: {
-      main: `This time you have more towers, but less horizontal room to work
-             with.
+      main: `Dessa vez você tem mais torres, mas menos espaço para posicionar suas torres na horizontal.
 
-The \`flex-direction\` property is your answer. \`flex-direction\` defines the
-directional layout of the main and cross axes in the flex container.
+A propriedade \`flex-direction\` é sua resposta. \`flex-direction\` define
+o layout direcionar dos eixos principal e secundário do container flex.
 
-For example, although the main axis lays out horizontally and the cross
-axis lays out vertically by default, \`flex-direction\` can *rotate* the axes
-such that the main axis lays out vertically and the cross axis lays out
-horizontally. Here's what this looks like:
+Por exemplo, apesar do eixo principal ser horizontal e o secundário, vertical por padrão,
+\`flex-direction\` pode *girar* os eixos de forma que o eixo principal se torna vertical e
+o secundário, horizontal. A propriedade funciona assim:
 
 <img src="images/flexbox-column.png" class="instructions__diagram" alt="flexbox diagram">
 
-Accordingly, \`flex-direction\` accepts the following values:
+\`flex-direction\` aceita os seguintes valores:
 
-* \`row\`: lay out the main axis from left to right
-* \`row-reverse\`: lay out the main axis from right to left
-* \`column\`: lay out the main axis from top to bottom
-* \`column-reverse\`: lay out the main axis from bottom to top`,
-      tldr: `Use <nobr class="text__code">flex-direction ▾</nobr> to move your
-             towers into position.`
+* \`row\`: dispõe o eixo principal da esquerda pra direita
+* \`row-reverse\`: dispõe o eixo principal da direita pra esquerda
+* \`column\`: dispõe o eixo principal de cima pra baixo
+* \`column-reverse\`: dispõe o eixo principal de baixo pra cima`,
+      tldr: `Use <nobr class="text__code">flex-direction ▾</nobr> para mover suas torres.`
     },
     minimumScore: 80
   });

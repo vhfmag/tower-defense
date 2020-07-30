@@ -25,7 +25,7 @@
                 name="button"
                 onclick={{action "openDropdown"}}>
           <span class="selector__content">
-            Wave {{currentWaveNumber}} of {{game.waves.length}}
+            Onda {{currentWaveNumber}} de {{game.waves.length}}
             <i class="fa fa-caret-down selector__caret"></i>
           </span>
         </button><!--
@@ -72,26 +72,27 @@
           <div class="tooltip__content tooltip__content--below">
             <div class="tooltip__text">
               {{#if (eq instructionToolTipProperty "justify-content ▾")}}
-                <p><u>flex-start</u>: group items at the start of a container's main axis</p>
-                <p><u>flex-end</u>: group items at the end of the main axis</p>
-                <p><u>center</u>: group items in the center of the main axis</p>
-                <p><u>space-between</u>: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end</p>
-                <p><u>space-around</u>: evenly distribute items along the main axis such that all items have equal space around them</p>
+                <p><u>flex-start</u>: agrupa itens no começo do eixo principal do container</p>
+                <p><u>flex-end</u>: agrupa itens no final do eixo principal do container</p>
+                <p><u>center</u>: agrupa items no centro do eixo principal do container</p>
+                <p><u>space-between</u>: distribui os itens igualmente ao longo do eixo principal de forma que o primeiro item alinha com o começo e o último, com o fim</p>
+                <p><u>space-around</u>: distribui os itens igualmente ao longo do eixo principal de forma que todos os itens tenham o mesmo espaço ao seu redor</p>
+                <p><u>space-evenly</u>: distribui os itens igualmente ao longo do eixo principal de forma que todos os espaços sejam iguais</p>
               {{else if (eq instructionToolTipProperty "align-items ▾")}}
-                <p><u>flex-start</u>: align items across the start of a container's cross axis</p>
-                <p><u>flex-end</u>: align items across the end of the cross axis</p>
-                <p><u>center</u>: align items across the center of the cross axis</p>
+                <p><u>flex-start</u>: alinha itens ao começo do eixo secundário do container</p>
+                <p><u>flex-end</u>: alinha itens ao começo do eixo secundário do container</p>
+                <p><u>center</u>: alinha itens ao começo do eixo secundário do container</p>
               {{else if (eq instructionToolTipProperty "flex-direction ▾")}}
-                <p><u>row</u>: lay out the main axis from left to right</p>
-                <p><u>row-reverse</u>: lay out the main axis from right to left</p>
-                <p><u>column</u>: lay out the main axis from top to bottom</p>
-                <p><u>column-reverse</u>: lay out the main axis from bottom to top</p>
+                <p><u>row</u>: dispõe o eixo principal da esquerda pra direita</p>
+                <p><u>row-reverse</u>: dispõe o eixo principal da direita pra esquerda</p>
+                <p><u>column</u>: dispõe o eixo principal de cima pra baixo</p>
+                <p><u>column-reverse</u>: dispõe o eixo principal de baixo pra cima</p>
               {{else if (eq instructionToolTipProperty "order ▾")}}
-                <p><u>#</u>: position an item relative to the other items in the container</p>
+                <p><u>número</u>: posiciona um item com relação a outros itens no container</p>
               {{else if (eq instructionToolTipProperty "align-self ▾")}}
-                <p><u>flex-start</u>: align item at the start of a container's cross axis</p>
-                <p><u>flex-end</u>: align item at the end of the cross axis</p>
-                <p><u>center</u>: align item at the center of the cross axis</p>
+                <p><u>flex-start</u>: alinha item ao começo do eixo secundário do container</p>
+                <p><u>flex-end</u>: alinha item ao começo do eixo secundário do container</p>
+                <p><u>center</u>: alinha item ao começo do eixo secundário do container</p>
               {{/if}}
             </div>
           </div>
@@ -117,7 +118,7 @@
                          waveStarted=(readonly waveStarted)}}
 
     <footer class="sidebar__footer">
-      <p class="footer__text">Made by Channing Allen</p>
+      <p class="footer__text">Feito por Channing Allen</p>
       <a class="footer__link"
          href="https://www.facebook.com/TheChanningAllen"
          target="_blank"><i class="fa fa-facebook-square"></i></a>
@@ -159,56 +160,55 @@
           <div class="modal__instructions">{{{instructionsMain}}}</div>
 
           <div class="modal__actions">
-            <button class="modal__button" {{action "hideOverlay"}}>Ok, got it!</button>
-            <a class="modal__support-link" {{action "showSupportModal"}}>Support this project</a>
+            <button class="modal__button" {{action "hideOverlay"}}>Ok, entendi!</button>
+            <a class="modal__support-link" {{action "showSupportModal"}}>Apoie esse projeto</a>
           </div>
 
         {{else if gradeModalShown}}
           {{#if passed}}
             <div class="modal__grade">
-              <p>Congratulations! You scored {{score}} points!</p>
+              <p>Parabéns! Você pontuou {{score}}!</p>
 
               {{#if isLastWave}}
-                <p>You beat the game! If you had a good time, follow me for
-                   updates and spread the word about flexboxdefense.com!</p>
+                <p>Você zerou o jogo! Se você gostou, me siga para receber atualizações e compartilhe o flexboxdefense.com!</p>
                 <div class="custom-follow-button">
                   <a href="https://twitter.com/intent/user?screen_name=channingallen" target="_blank" alt="Follow Channing Allen">
                     <i class="btn-icon"></i>
-                    <span class="btn-text">Follow @ChanningAllen</span>
+                    <span class="btn-text">SIga @ChanningAllen</span>
                   </a>
                 </div>
               {{/if}}
             </div>
           {{else}}
             <div class="modal__grade">
-              <p>You scored {{score}} points. See if you can get 80 or more!</p>
+              <p>Você pontuou {{score}}. Veja se consegue 80 ou mais!</p>
             </div>
           {{/if}}
 
           <div class="modal__actions">
             <div class="modal__buttons">
-              <button class="modal__button" {{action "hideOverlay"}}>Try again</button>
+              <button class="modal__button" {{action "hideOverlay"}}>Tente novamente</button>
               {{#unless isLastWave}}
-              <button class="modal__button" {{action "changeWaveNext"}}>Next wave</button>
+              <button class="modal__button" {{action "changeWaveNext"}}>Próxima onda</button>
               {{/unless}}
             </div>
-            <a class="modal__support-link" {{action "showSupportModal"}}>Support this project</a>
+            <a class="modal__support-link" {{action "showSupportModal"}}>Apoie esse projeto</a>
           </div>
 
         {{else if cancellationModalShown}}
           <div class="modal__cancellation">
-            <p>Sorry! Flexbox Defense doesn't run well in the background just yet.</p>
-            <p>Mind trying again?</p>
+            <p>Desculpa! Flexbox Defense não roda bem em plano de fundo nesse exato momento.</p>
+            <p>Se importa de tentar novamente?</p>
           </div>
 
           <div class="modal__actions">
-            <button class="modal__button" {{action "hideOverlay"}}>Try again</button>
-            <a class="modal__support-link" {{action "showSupportModal"}}>Support this project</a>
+            <button class="modal__button" {{action "hideOverlay"}}>Tente novamente</button>
+            <a class="modal__support-link" {{action "showSupportModal"}}>Apoie esse projeto</a>
           </div>
 
         {{else if supportModalShown}}
           <div class="modal__support">
-            <p>Have you found Flexbox Defense useful? Please make a $5 donation and follow <a class="support__twitter-link" href="https://twitter.com/intent/user?screen_name=channingallen" target="_blank" alt="Follow Channing Allen">@ChanningAllen</a> on Twitter for updates on this and other projects!</p>
+            <p>Você achou Flexbox Defense útil? Por favor, faça uma doanção de $5 e siga <a class="support__twitter-link" href="https://twitter.com/intent/user?screen_name=channingallen" target="_blank" alt="Follow Channing Allen">@ChanningAllen</a> no Twitter para receber atualizações desse e de outros projetos!</p>
             <form action="https://www.paypal.com/cgi-bin/webscr"
                   class="support__form"
                   method="post"
@@ -221,13 +221,13 @@
           </div>
 
           <div class="modal__actions">
-            <button class="modal__button" {{action "hideOverlay"}}>Dismiss</button>
+            <button class="modal__button" {{action "hideOverlay"}}>Cancelar</button>
           </div>
 
         {{else}}
           <div class="modal__actions">
-            <button class="modal__button" {{action "hideOverlay"}}>Dismiss</button>
-            <a class="modal__support-link" {{action "showSupportModal"}}>Support this project</a>
+            <button class="modal__button" {{action "hideOverlay"}}>Cancelar</button>
+            <a class="modal__support-link" {{action "showSupportModal"}}>Apoie esse projeto</a>
           </div>
         {{/if}}
       </div>
